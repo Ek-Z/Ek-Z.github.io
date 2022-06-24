@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.left-50 {
+    left: 50%;
+}
+
+.right-50 {
+    left: 50%;
+}
+
+.top-50 {
+    left: 50%;
+}
+
+.-z-1 {
+    z-index: -1;
+}
+
+.secondary-title {
+    @apply text-5xl font-bold mb-12;
+}
+
+.secondary-title::after {
+    content: "";
+    @apply block w-20 h-1 bg-theme rounded-full mt-2;
+}
+
+.section-paragraph {
+    @apply  my-6 w-full max-w-3xl;
+}
+
+.subtitle {
+    @apply text-xl font-bold
+}
+
+
+[id] {
+    scroll-margin-top: 100px;
+}
+
+.left-percentage {
+    left: 5%;
+}
+
+.h-screen-partial {
+    height: 80vh;
+}
+
+.nav-dot {
+    transition: background 200ms, border-color 200ms;
+}
+
+.selected-circle {
+    @apply border-theme bg-theme;
+}
+
+.nav-dot:hover span {
+    opacity: 1;
+}
+
+ul.skills li {
+    display: inline;
+    @apply mr-4;
+}
+
+ul.skills li::before {
+    content: url('img/arrow.svg');
+    @apply mr-2;
+}
+
+.link::after {
+    content: url('img/long_right.svg');
+    @apply block;
+}
+
+/* Dropdown Button */
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
